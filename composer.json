@@ -1,0 +1,16 @@
+{
+  "name": "hotel/system",
+  "type": "project",
+  "require": {
+    "php": "^8.2",
+    "laravel/framework": "^11.0",
+    "laravel/sanctum": "^4.2",
+    "spatie/laravel-permission": "^6.23",
+    "spatie/laravel-activitylog": "^4.10"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
