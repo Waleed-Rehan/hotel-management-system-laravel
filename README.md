@@ -4,7 +4,7 @@
 > This repository is provided **for viewing purposes only**.  
 > No permission is granted to copy, modify, or distribute this code.
 
-A modular **Hotel Management System** built with **Laravel 11** and **PHP 8.2**, showcasing clean CRUD workflows, pragmatic validation, and a modern Blade/Tailwind UI.  
+A modular **Hotel Management System** built with **Laravel 12** and **PHP 8.2**, showcasing clean CRUD workflows, pragmatic validation, and a modern Blade/Tailwind UI.  
 It demonstrates core hotel operations including **Rooms**, **Room Types**, **Guests & Groups**, **Reservations**, **Housekeeping**, and **Maintenance Tickets**.
 
 ---
