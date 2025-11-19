@@ -1,92 +1,69 @@
-# Hotel Management System (Laravel)
+# 🌐 Hotel Management System (Laravel)
 
-> ⚠️ **Important Notices**
->
-> - **“This repository is for viewing purposes only.”**  
-> - **“No permission is granted to copy, modify, or distribute this code.”**
+> ⚠️ **Important Notice**  
+> This repository is provided **for viewing purposes only**.  
+> No permission is granted to copy, modify, or distribute this code.
 
-A modular hotel management system built with **Laravel 11** and **PHP 8.2**, designed to demonstrate clean CRUD flows, pragmatic validation, and a tidy Blade/Tailwind UI.  
-Core areas include **Rooms**, **Room Types**, **Guests & Groups**, **Reservations**, **Housekeeping Tasks**, and **Maintenance Tickets**.
-
----
-
-## Table of Contents
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Screens & Modules](#screens--modules)
-- [Local Setup](#local-setup)
-  - [Prerequisites](#prerequisites)
-  - [Clone](#1-clone)
-  - [Install Dependencies](#2-install-dependencies)
-  - [Environment](#3-environment)
-  - [Database](#4-database)
-  - [Run the App](#5-run-the-app)
-- [Quality & Conventions](#quality--conventions)
-- [Folder Structure](#folder-structure)
-- [Troubleshooting](#troubleshooting)
-- [Roadmap Ideas](#roadmap-ideas)
-- [License & Permissions](#license--permissions)
-- [Contact](#contact)
+A modular **Hotel Management System** built with **Laravel 11** and **PHP 8.2**, showcasing clean CRUD workflows, pragmatic validation, and a modern Blade/Tailwind UI.  
+It demonstrates core hotel operations including **Rooms**, **Room Types**, **Guests & Groups**, **Reservations**, **Housekeeping**, and **Maintenance Tickets**.
 
 ---
 
-## Features
-- **Rooms**
-  - Room listing, status badges (vacant / occupied / cleaning / maintenance / out_of_service).
-  - Basic attributes (number, type linkage).
-- **Room Types**
-  - Name, capacity, beds, base price.
-- **Guests & Groups**
-  - Guests: name, nationality, document type/number.
-  - Groups: name + optional color, reusable across guests.
-- **Reservations**
-  - Assign room, date range, status (new / confirmed / checked_in / checked_out / canceled), paid amount.
-  - Attach multiple guests to a reservation.
-  - Search & filter (by room number, guest name, status).
-- **Housekeeping**
-  - Task notes, `needs_food` flag, `created_by`, `completed_at`.
-- **Maintenance**
-  - Ticketed issues per room, tools request, status, `created_by`, `completed_at`.
-- **UI/UX**
-  - Blade components for badges & statuses.
-  - Clean Tailwind styling, responsive tables, simple filters.
-  - Flash messages and validation feedback.
+## 📑 Table of Contents
+- [✨ Features](#-features)
+- [🛠 Tech Stack](#-tech-stack)
+- [📊 Screens & Modules](#-screens--modules)
+- [⚙️ Local Setup](#-local-setup)
+- [📐 Quality & Conventions](#-quality--conventions)
+- [📂 Folder Structure](#-folder-structure)
+- [🧩 Troubleshooting](#-troubleshooting)
+- [🚀 Roadmap Ideas](#-roadmap-ideas)
+- [📜 License & Permissions](#-license--permissions)
+- [📬 Contact](#-contact)
 
 ---
 
-## Tech Stack
-- **Backend:** Laravel 11, PHP 8.2  
-- **Database:** MySQL (or MariaDB) with Eloquent, migrations, optional seeders  
-- **Frontend:** Blade, Tailwind CSS  
-- **Auth:** Laravel session-based auth  
-- **Tooling:** Composer, Artisan
+## ✨ Features
+- **Rooms** → Listing, status badges (vacant / occupied / cleaning / maintenance / out_of_service), basic attributes.  
+- **Room Types** → Name, capacity, beds, base price.  
+- **Guests & Groups** → Guest details (name, nationality, document type/number), reusable group assignments with optional color.  
+- **Reservations** → Room assignment, date range, status (new / confirmed / checked_in / checked_out / canceled), paid amount, guest linking, search & filter.  
+- **Housekeeping** → Task notes, `needs_food` flag, created_by, completed_at.  
+- **Maintenance** → Ticketed issues per room, tool requests, status tracking, created_by, completed_at.  
+- **UI/UX** → Blade components, responsive Tailwind tables, filters, flash messages, validation feedback.  
 
 ---
 
-## Screens & Modules
-- **Admin → Rooms**  
-- **Admin → Room Types**  
-- **Admin → Guests**  
-- **Admin → Groups**  
-- **Admin → Reservations** (index, create, edit, show)  
-- **Admin → Housekeeping Tasks**  
-- **Admin → Maintenance Tickets**
-
-> Screens are implemented under `resources/views/admin/...` with partials like `_form.blade.php` where appropriate.  
-> Reusable Blade components live in `resources/views/components`.
+## 🛠 Tech Stack
+- **Backend:** Laravel 12, PHP 8.2  
+- **Database:** MySQL / MariaDB with Eloquent ORM, migrations, seeders  
+- **Frontend:** Blade templates, Tailwind CSS  
+- **Authentication:** Laravel session-based auth  
+- **Tooling:** Composer, Artisan CLI, Node.js (for asset builds)  
 
 ---
 
-## Local Setup
+## 📊 Screens & Modules
+- Admin → Rooms  
+- Admin → Room Types  
+- Admin → Guests  
+- Admin → Groups  
+- Admin → Reservations (index, create, edit, show)  
+- Admin → Housekeeping Tasks  
+- Admin → Maintenance Tickets  
+
+> Views live under `resources/views/admin/...` with reusable partials (`_form.blade.php`) and Blade components (`resources/views/components`).
+
+---
+
+## ⚙️ Local Setup
 
 ### Prerequisites
-- PHP **8.2+**
-- Composer **2.x**
-- MySQL **8.x** / MariaDB **10.6+**
-- Node.js **18+** (only if you plan to rebuild front-end assets)
-- Git
+- PHP **8.2+**  
+- Composer **2.x**  
+- MySQL **8.x** / MariaDB **10.6+**  
+- Node.js **18+** (for asset compilation)  
+- Git  
 
 ### 1) Clone
-```bash
-git clone https://github.com/<your-user>/<your-repo>.git
-cd <your-repo>
+"don't do it"
